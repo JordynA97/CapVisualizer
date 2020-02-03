@@ -1,0 +1,26 @@
+#badEndingImg{
+    width: 500px;
+    height: 400px;
+    visibility: visible;
+}
+
+#goodEndingImg{
+    width:500px;
+    height: 400px;
+    visibility: hidden;
+}
+
+.goodEnding, .badEnding{
+    position: absolute;
+}
+
+.variableSliders{
+    position: absolute;
+    display: block;
+    margin-top: 500px;
+    margin-left: 10px;
+}
+
+.images{
+    margin-top: 5%;
+}
