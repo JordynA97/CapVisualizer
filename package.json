@@ -1,0 +1,19 @@
+{
+  "name": "capvisualizer",
+  "version": "1.0.0",
+  "description": "Capstone Visualizer Program",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordynA97/CapVisualizer.git"
+  },
+  "author": "Jordyn Antinore and Wyatt Lynch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordynA97/CapVisualizer/issues"
+  },
+  "homepage": "https://github.com/JordynA97/CapVisualizer#readme"
+}
