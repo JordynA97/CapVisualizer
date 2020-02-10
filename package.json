@@ -4,7 +4,7 @@
   "description": "Capstone Visualizer Program",
   "main": "script.js",
   "scripts": {
-    "start": "node ./script.js",
+    "start": "node ./server.js",
     "test": "echo \"Tests Completed\""
   },
   "repository": {
