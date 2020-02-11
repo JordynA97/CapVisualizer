@@ -6,7 +6,7 @@ const fs = require('fs');
 const html = fs.readFileSync(`${__dirname}/VisualizerHTML.html`);
 
 const getHtml = (request, response) => {
-  response.writeHead(200, { 'Content-Type': 'text/html' });
+  response.writeHead(200, { 'Content-Type': 'application/json' });
   response.write(html);
   response.end();
 };
