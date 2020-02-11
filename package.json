@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/JordynA97/CapVisualizer/issues"
   },
-  "homepage": "https://github.com/JordynA97/CapVisualizer#readme"
+  "homepage": "https://github.com/JordynA97/CapVisualizer#readme",
+  "dependencies": {
+    "express-favicon": "^2.0.1",
+    "serve-favicon": "^2.5.0"
+  }
 }
