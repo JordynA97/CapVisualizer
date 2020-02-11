@@ -13,7 +13,7 @@ function checkVariables(){
         badImg.style.visibility = "hidden";
         goodImg.style.visibility = "visible";
         
-    }else if(varOne.value < 5){
+    }else if(varOne.value <= 5){
         badImg.style.visibility = "visible";
         goodImg.style.visibility = "hidden"
     }

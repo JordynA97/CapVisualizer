@@ -1,28 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Visualizer</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
 
-<body>
-  <script src="script.js"></script>
-  <div class="images">
-    <div class="badEnding">
-      <img id="badEndingImg" src="media/bad.jpg">
+  <body>
+    
+    <div class="images">
+      <div class="badEnding">
+        <img id="badEndingImg" src="media/bad.jpg">
+      </div>
+      <div class="goodEnding">
+        <img id="goodEndingImg" src="media/good.jpg">
+      </div>
     </div>
-    <div class="goodEnding">
-      <img id="goodEndingImg" src="media/good.jpg">
-    </div>
-  </div>
   
-  <div class="variableSliders">
-    <p>Variable One: </p>
-    <input id="varOne" type="range" min="0" max="10" value="5" onchange="checkVariables()">
+    <div class="variableSliders">
+      <p>Variable One: </p>
+      <input id="varOne" type="range" min="0" max="10" value="5" onchange="checkVariables()">
 
-    <p>Variable Two: </p>
-    <input id="varTwo" type="range" min="0" max="10" value="5" onchange="checkVariables()">
-  </div>
-</body>
+      <p>Variable Two: </p>
+      <input id="varTwo" type="range" min="0" max="10" value="5" onchange="checkVariables()">
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
