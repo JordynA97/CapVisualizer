@@ -3,10 +3,10 @@ const http = require('http');
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 const fs = require('fs');
 
-const html = fs.readFileSync(`${__dirname}/VisualizerHTML.html`);
+const html = fs.readFileSync(`${__dirname}/../VisualizerHTML.html`);
 
 const getHtml = (request, response) => {
-  response.writeHead(200, { 'Content-Type': 'image/png' });
+  response.writeHead(200, { 'Content-Type': 'text/html' });
   response.write(html);
   response.end();
 };

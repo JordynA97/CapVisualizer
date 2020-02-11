@@ -2,9 +2,9 @@
   "name": "capvisualizer",
   "version": "1.0.0",
   "description": "Capstone Visualizer Program",
-  "main": "script.js",
+  "main": "./src/script.js",
   "scripts": {
-    "start": "node ./server.js",
+    "start": "node ./src/server.js",
     "test": "echo \"Tests Completed\""
   },
   "repository": {
