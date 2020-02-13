@@ -3,7 +3,6 @@
 function checkVariables(){
     //variable sliders
     let populationSlider = document.getElementById("population");
-    let publicTransport = document.getElementById("transport");
 
     //outcome animations
     let badImg = document.getElementById("badEndingImg");

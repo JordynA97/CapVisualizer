@@ -27,9 +27,49 @@
     display: block;
     margin-top: 400px;
     margin-left: 55%;
-    text-align: right;
+
 }
 
+.labels{
+    text-align: right;
+    display: block;
+    margin-right: -50%;
+}
 .images{
     margin-top: 5%;
 }
+
+#population, #transport, #sustainTech, #carbonCapture, #conservation, #civilDensity {
+    align-content: right;
+    -webkit-appearance: none;
+    width: 150%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  #population:hover, #transport:hover, #sustainTech:hover, #carbonCapture:hover, #conservation:hover, #civilDensity:hover {
+    opacity: 1;
+  }
+  
+  #population::-webkit-slider-thumb, #transport::-webkit-slider-thumb, #sustainTech::-webkit-slider-thumb, #carbonCapture::-webkit-slider-thumb, #conservation::-webkit-slider-thumb, #civilDensity::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:darkgrey;
+    cursor: pointer;
+  }
+  
+  #population::-moz-range-thumb, #transport::-moz-range-thumb, #sustainTech::-moz-range-thumb, #carbonCapture::-moz-range-thumb, #conservation::-moz-range-thumb, #civilDensity::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: grey;
+    cursor: pointer;
+  }
