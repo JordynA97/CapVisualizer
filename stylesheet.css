@@ -16,7 +16,7 @@
 
 .variableSlidersOne{
     position: absolute;
-    display: block;
+    display: inline-block;
     margin-top: 400px;
     margin-left: 10px;
     text-align: left;
@@ -24,7 +24,7 @@
 
 .variableSlidersTwo{
     position: absolute;
-    display: block;
+    display: inline-block;
     margin-top: 400px;
     margin-left: 55%;
 
@@ -72,4 +72,34 @@
     border-radius: 50%;
     background: grey;
     cursor: pointer;
+  }
+
+  #maxVal{
+    margin-left: 135%;
+    display: inline-block;
+    position: absolute;
+  }
+
+  #outputAndButton{
+    display: block;
+    position: absolute;
+  }
+
+  #simulate {
+    background-color: lightgray;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 500%;
+    margin-left: 400%;
+  }
+
+  #simulate:hover{
+      background-color: darkgrey;
   }
