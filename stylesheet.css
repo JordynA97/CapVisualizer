@@ -1,11 +1,11 @@
 #badEndingImg{
-    width: 600px;
+    width: 75%;
     height: 400px;
     visibility: visible;
 }
 
 #goodEndingImg{
-    width:600px;
+    width:75%;
     height: 400px;
     visibility: hidden;
 }
@@ -14,11 +14,20 @@
     position: absolute;
 }
 
-.variableSliders{
+.variableSlidersOne{
     position: absolute;
     display: block;
-    margin-top: 500px;
+    margin-top: 400px;
     margin-left: 10px;
+    text-align: left;
+}
+
+.variableSlidersTwo{
+    position: absolute;
+    display: block;
+    margin-top: 400px;
+    margin-left: 55%;
+    text-align: right;
 }
 
 .images{

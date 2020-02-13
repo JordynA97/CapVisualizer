@@ -2,38 +2,38 @@
 
 function checkVariables(){
     //variable sliders
-    let varOne = document.getElementById("varOne");
-    let varTwo = document.getElementById("varTwo");
+    let populationSlider = document.getElementById("population");
+    let publicTransport = document.getElementById("transport");
 
     //outcome animations
     let badImg = document.getElementById("badEndingImg");
     let goodImg = document.getElementById("goodEndingImg");
 
-    if(varOne.value >= 5){
+    if(populationSlider.value >= 5){
         badImg.style.visibility = "hidden";
         goodImg.style.visibility = "visible";
         
-    }else if(varOne.value <= 5){
+    }else if(populationSlider.value <= 5){
         badImg.style.visibility = "visible";
         goodImg.style.visibility = "hidden"
     }
 
     //values can be linked together
-    //varTwo.value = varOne.value;
+    //publicTransport.value = population.value;
 
     //this lets one slider change the steps of 
-    // if(varOne.value > 5){
-    //    varTwo.step = 5;
+    // if(population.value > 5){
+    //    publicTransport.step = 5;
     // }
 
     //if value is 5, other sliders max is changed.
-    // if(varOne.value == 5){
-    //    varTwo.max = 5;
+    // if(population.value == 5){
+    //    publicTransport.max = 5;
     // }
 
     //if slider is 0, disable the other slider.
-    // if(varOne.value == 0){
-    //     varTwo.disabled = true;
+    // if(population.value == 0){
+    //     publicTransport.disabled = true;
     // }
 
     //https://bashooka.com/coding/25-amazing-css-range-slider-designs/
