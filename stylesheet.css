@@ -27,7 +27,6 @@
     display: inline-block;
     margin-top: 400px;
     margin-left: 55%;
-
 }
 
 .labels{
@@ -35,57 +34,17 @@
     display: block;
     margin-right: -50%;
 }
+
 .images{
     margin-top: 5%;
 }
 
-#population, #transport, #sustainTech, #carbonCapture, #conservation, #civilDensity {
-    align-content: right;
-    -webkit-appearance: none;
-    width: 150%;
-    height: 15px;
-    border-radius: 5px;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  
-  #population:hover, #transport:hover, #sustainTech:hover, #carbonCapture:hover, #conservation:hover, #civilDensity:hover {
-    opacity: 1;
-  }
-  
-  #population::-webkit-slider-thumb, #transport::-webkit-slider-thumb, #sustainTech::-webkit-slider-thumb, #carbonCapture::-webkit-slider-thumb, #conservation::-webkit-slider-thumb, #civilDensity::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background:darkgrey;
-    cursor: pointer;
-  }
-  
-  #population::-moz-range-thumb, #transport::-moz-range-thumb, #sustainTech::-moz-range-thumb, #carbonCapture::-moz-range-thumb, #conservation::-moz-range-thumb, #civilDensity::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: grey;
-    cursor: pointer;
-  }
-
-  #maxVal{
-    margin-left: 135%;
-    display: inline-block;
-    position: absolute;
-  }
-
-  #outputAndButton{
+#outputAndButton{
     display: block;
     position: absolute;
-  }
+}
 
-  #simulate {
+#simulate {
     background-color: lightgray;
     border: none;
     color: black;
@@ -96,15 +55,15 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    margin-top: 500%;
-    margin-left: 400%;
-  }
+    margin-top: 10%;
+    margin-left: 150%;
+}
 
-  #simulate:hover{
-      background-color: darkgrey;
-  }
+#simulate:hover{
+    background-color: darkgrey;
+}
 
-  #container {
+#container {
     width: 100%;
     height: 100%;
     display: grid;
@@ -118,6 +77,8 @@
 .sliderContainer {
     align-self: center;
     justify-self: center;
+    margin-top: 50%;
+    margin-left: -15%;
     /* grid-area: sliderContainer; */
 }
 
@@ -163,30 +124,7 @@ input {
     width: 100%;
     z-index: -1;
     opacity: 0;
-}
-
-.price {
-    align-self: center;
-    justify-self: center;
-    display: block;
-    /* grid-area: price; */
-}
-
-.price .pricing {
-    color: black;
-    font-size: 3.5rem;
-}
-
-.price .box {
-    width: 20px;
-    height: 15px;
-    display: inline-block;
-    margin: 0 10px;
-    border-radius: 25px;
-}
-
-.price .text {
-    color: black;
+    margin-top: 200%;
 }
 
 @media screen and (max-width: 768px) {
