@@ -7,24 +7,35 @@
   </head>
 
   <body>
-    
-    <div class="images">
-      <div class="badEnding">
-        <img id="badEndingImg" src="media/greenTrees.PNG">
-      </div>
-      <div class="goodEnding">
-        <img id="goodEndingImg" src="media/orangeTrees.PNG">
-      </div>
+    <!-- LEFT PANEL -->
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <p>Statistics</p>
     </div>
     
-    <div id="container">
-      <div class="price"></div>
-      <div class="sliderContainer"></div>
-    </div>
+    <button class="openbtn" onclick="openNav()">☰ Stats</button>  
 
-    <div id="outputAndButton">
-      <button id="simulate">Simulate</button>
+    <!-- RIGHT PANEL -->
+    <div id="mySidepanelRight" class="sidepanelRight">
+      <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
+        <div id="createSimulation">
+          <p>Sliders</p>
+          
+          <label>Slider 1</label>
+          <input type="range" min="1" max="100" value="50" class="slider" id="sliderOne">
+          <p></p>
+          <label>Slider 2</label>
+          <input type="range" min="1" max="100" value="50" class="slider" id="sliderTwo">
+          <p></p>
+          <label>Slider 3</label>
+          <input type="range" min="1" max="100" value="50" class="slider" id="sliderThree">
+
+          <p></p>
+          <button id="simulate">Simulate</button>
+        </div>
     </div>
+    
+    <button class="openbtnRight" onclick="openNavRight()">☰ Sliders</button>  
 
     <script src="../src/script.js"></script>
   </body>

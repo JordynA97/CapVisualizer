@@ -1,49 +1,25 @@
-#badEndingImg{
-    width: 75%;
-    height: 400px;
-    visibility: visible;
+/* BACKGROUND */
+html{
+    background: url(media/greenTrees.PNG) no-repeat center center fixed;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-#goodEndingImg{
-    width:75%;
-    height: 400px;
-    visibility: hidden;
-}
+/* BUTTON TO SIMULATE */
 
-.goodEnding, .badEnding{
-    position: absolute;
-}
-
-.variableSlidersOne{
-    position: absolute;
-    display: inline-block;
-    margin-top: 400px;
-    margin-left: 10px;
-    text-align: left;
-}
-
-.variableSlidersTwo{
-    position: absolute;
-    display: inline-block;
-    margin-top: 400px;
-    margin-left: 55%;
-}
-
-.labels{
-    text-align: right;
-    display: block;
-    margin-right: -50%;
-}
-
-.images{
-    margin-top: 5%;
-}
-
-#outputAndButton{
+#createSimulation{
     display: block;
     position: absolute;
 }
 
+.slider{
+    display: block;
+    position: absolute;
+    margin: auto;
+}
 #simulate {
     background-color: lightgray;
     border: none;
@@ -55,89 +31,117 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    margin-top: 10%;
-    margin-left: 150%;
+    left: 15%;
+    align-content: center;
 }
 
 #simulate:hover{
     background-color: darkgrey;
 }
 
-#container {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-areas:
-        "price sliderContainer" */
-}
+/* LEFT PANNEL */
 
-.sliderContainer {
-    align-self: center;
-    justify-self: center;
-    margin-top: 50%;
-    margin-left: -15%;
-    /* grid-area: sliderContainer; */
-}
-
-.progress {
-    width: 100%;
-    height: 100%;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    position: relative;
-}
-
-.progress__meter,
-.progress__value {
-    fill: none;
-}
-
-.progress__meter {
-  stroke: #e6e6e6;
-}
-
-.progress__value {
-  stroke: #f77a52;
-}
-
-.dial {
-    background-color: whitesmoke;
-    border-radius: 50%;
-    box-shadow: 0 0 3px black;
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a, .sidepanel p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
     cursor: pointer;
-    height: 26px;
-    margin-left: -13px;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    top: 0;
+    left: 0;
     position: absolute;
-    top: -13px;
-    width: 26px;
-    z-index: 124;
-}
+    z-index: 1;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
 
-input {
+/* RIGHT PANNEL */
+
+  .sidepanelRight  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidepanelRight a, .sidepanelRight p {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanelRight a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanelRight .closebtnRight {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    z-index: -1;
-    opacity: 0;
-    margin-top: 200%;
-}
-
-@media screen and (max-width: 768px) {
-
-    #container {
-        grid-template-columns: 1fr;
-        /* grid-template-areas:
-        "sliderContainer"
-        "price"; */
-    }
-
-    .sliderContainer {
-        justify-self: center;
-    }
-
-}
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtnRight {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .openbtnRight:hover {
+    background-color:#444;
+  }
