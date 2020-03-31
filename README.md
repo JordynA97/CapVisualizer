@@ -1,7 +1,7 @@
 # CapVisualizer
 Visualizer with sliders that effect the visual outcome
 
-Authors: Jordyn Antinore
+Authors: Jordyn Antinore, Wyatt Lynch
 
 Purpose: Visualize the changes that users are making via sliders
 
