@@ -32,6 +32,30 @@ function closeNavRight() {
   sidePanelRight.style.height = "0";
 }
 
+
+function corpsChange(e) {
+  document.querySelector("#corpsSlider").style.background = 'linear-gradient(to right, #2EFFCD 0%, #2EFFCD ' + e + '%, #414C53 ' + e + '%, #414C53 100%)'
+};
+
+function deforestChange(e) {
+  document.querySelector("#deforestSlider").style.background = 'linear-gradient(to right, #2EFFCD 0%, #2EFFCD ' + e + '%, #414C53 ' + e + '%, #414C53 100%)'
+};
+
+function carbonCapChange(e) {
+  document.querySelector("#carbonCapSlider").style.background = 'linear-gradient(to right, #2EFFCD 0%, #2EFFCD ' + e + '%, #414C53 ' + e + '%, #414C53 100%)'
+};
+
+function renewChange(e) {
+  document.querySelector("#renewSlider").style.background = 'linear-gradient(to right, #2EFFCD 0%, #2EFFCD ' + e + '%, #414C53 ' + e + '%, #414C53 100%)'
+};
+
+function populationChange(e) {
+  document.querySelector("#populationSlider").style.background = 'linear-gradient(to right, #2EFFCD 0%, #2EFFCD ' + e + '%, #414C53 ' + e + '%, #414C53 100%)'
+};
+
+function transportChange(e) {
+  document.querySelector("#transportSlider").style.background = 'linear-gradient(to right, #2EFFCD 0%, #2EFFCD ' + e + '%, #414C53 ' + e + '%, #414C53 100%)'
+};
 //NEXT:
 //when you input algorithm, just change the html.style.background to the correct image given. 
 

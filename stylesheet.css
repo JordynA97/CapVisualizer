@@ -1,38 +1,76 @@
 /* BACKGROUND */
 html{
-    background: url(media/greenTrees.PNG) no-repeat center center fixed;
-    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url(media/greenTrees.PNG) no-repeat center center fixed;
+  font-family: 'Heebo';
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
 }
 
 /* BUTTON TO SIMULATE */
 
 #createSimulation{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    top: 30px;
-    height: 80%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  top: 30px;
+  background:#2e2e2e;
+  height: 80%;
+  margin-top: 10%;
+  width: 95%;
 }
 
 .option {
   width: 100%;
 }
 
-.slider{
-    display: block;
-    margin: auto;
+.slider {
+
+  width: 75%;
+  height: 5px;
+
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  margin-left: 15%;
+
+  background: linear-gradient(to right, #2EFFCD 0%, #2EFFCD 50%, #414C53 50%, #414C53 100%);
+  border-radius: 8px;
+
+  outline: none;
+  transition: white 450ms ease-in;
+  -webkit-appearance: none;
 }
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  box-shadow: 0 0 0 10px rgba(65, 76, 83, 0.541);
+  border-radius: 50%;
+  background: #2EFFCD;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 #simulate {
-    background-color: lightgray;
     border: none;
-    color: black;
+    color: #2EFFCD;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -42,10 +80,13 @@ html{
     cursor: pointer;
     left: 15%;
     align-content: center;
+    background: #242424;
+box-shadow: 0px 10px 12px rgba(27, 27, 27, 0.51);
+border-radius: 59px;
 }
 
 #simulate:hover{
-    background-color: darkgrey;
+    background-color: rgb(61, 61, 61);
 }
 
 /* LEFT PANNEL */
@@ -57,7 +98,7 @@ html{
     height: 250px;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #242424;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -105,12 +146,12 @@ html{
   .sidepanelRight  {
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     height: 250px;
     top: 0;
     right: 0;
-    background-color: #111;
-    overflow-x: hidden;
+    background-color: #242424;
+    overflow: hidden;
     transition: 0.5s;
     padding-top: 60px;
     display:flex;
@@ -141,12 +182,16 @@ html{
   .openbtnRight {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
+    background-color: #242424;
     color: white;
     padding: 10px 15px;
     border: none;
-    top: 0;
-    right: 0;
+    position: relative;
+    transform: rotate(270deg);
+    top: 50%;
+    right: -2%;
+    bottom: 0;
+    height: 10%;
     position: absolute;
     z-index: 1;
   }
@@ -159,8 +204,24 @@ label{
   display: block;
   color: white;
   text-align: center;
+  border-radius: 0px 12px 12px 0px;
+  border: solid 2px transparent;
+  background: #242424;
+  justify-content: left;
+  align-items: left;
+  flex-direction: row;
+  display: flex;
+  top:-5%;
+  width: 40%;
+  box-shadow: 4px 4px 5px rgba(27, 27, 27, 0.6);
 }
 
-p{
+#title, #subtitle{
   text-align: center;
+  color: white;
+}
+
+#subtitle{
+  font-size: 14px;
+  margin-top: -10%;
 }

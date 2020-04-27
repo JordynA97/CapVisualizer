@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Visualizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
 
@@ -13,49 +14,50 @@
       <p>Statistics</p>
     </div>
     
-    <button class="openbtn" onclick="openNav()">☰ Stats</button>  
+    <button class="openbtn" onclick="openNav()">Statistics</button>  
 
     <!-- RIGHT PANEL -->
     <div id="mySidepanelRight" class="sidepanelRight">
       <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
         <div id="createSimulation">
-          <p>Imagine the Amazon Rainforest</p>
+          <p id="title">Imagine the Amazon Rainforest</p>
+          <p id="subtitle"> The visualizer will show an outcome of the Amazon based on your choices</p>
 
           <div class="option">
-            <label for="corps">Impact of Corportations</label>
-            <input type="range" min="1" max="100" value="50" class="slider" id="corps">
+            <label for="corps" id="corpsLabel">Impact of Corportations</label>
+            <input type="range" min="1" max="100" value="50" class="slider" id="corpsSlider" oninput="corpsChange(this.value)">
           </div>
 
           <div class="option">
             <label for="deforest">Deforestation</label>
-            <input type="range" min="1" max="100" value="50" class="slider" id="deforest">
+            <input type="range" min="1" max="100" value="50" class="slider" id="deforestSlider" oninput="deforestChange(this.value)">
           </div>
 
           <div class="option">
             <label for="carbonCap">Carbon Capture Technology</label>
-            <input type="range" min="1" max="100" value="50" class="slider" id="carbonCap">
+            <input type="range" min="1" max="100" value="50" class="slider" id="carbonCapSlider" oninput="carbonCapChange(this.value)">
           </div>
 
           <div class="option">
             <label for="renew">Renewable Energy</label>
-            <input type="range" min="1" max="100" value="50" class="slider" id="renew">
+            <input type="range" min="1" max="100" value="50" class="slider" id="renewSlider" oninput="renewChange(this.value)">
           </div>
 
           <div class="option">
             <label for="population">Population on Earth</label>
-            <input type="range" min="1" max="100" value="50" class="slider" id="population">
+            <input type="range" min="1" max="100" value="50" class="slider" id="populationSlider" oninput="populationChange(this.value)">
           </div>
 
           <div class="option">
             <label for="transport">Public Transport</label>
-            <input type="range" min="1" max="100" value="50" class="slider" id="transport">
+            <input type="range" min="1" max="100" value="50" class="slider" id="transportSlider" oninput="transportChange(this.value)">
           </div>
           
           <button id="simulate">Simulate</button>
         </div>
     </div>
     
-    <button class="openbtnRight" onclick="openNavRight()">☰ Sliders</button>  
+    <button class="openbtnRight" onclick="openNavRight()">Settings</button>  
 
     <script src="../src/script.js"></script>
   </body>
