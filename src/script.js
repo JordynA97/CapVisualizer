@@ -7,16 +7,18 @@ var innerOverlayTwo = document.getElementById("innerOverlay2");
 var innerOverlayThree = document.getElementById("innerOverlay3");
 var innerOverlayFour = document.getElementById("innerOverlay4");
 
+var styleBlock = document.getElementById("buttonbackground");
+
 //button function for left panel
 function openNav() {
   if(sidePanel.style.width == "100%"){
+    styleBlock.style.backgroundColor = "#24242477"
     closeNav();
   }else{
   sidePanel.style.width = "100%";
-  sidePanel.style.height = "30vh";
+  sidePanel.style.height = "35vh";
+  styleBlock.style.backgroundColor = "transparent"
   }
-
-  //statsButton.style.bottom = "100%";
 }
 
 function closeNav() {
