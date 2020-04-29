@@ -172,7 +172,7 @@ function simulate(){ //adds all slider values together, takes average, then chec
 
   //what happens based on the average
   if(avg <= 188){
-    document.querySelector("html").style.background = "url('../media/healthy_forest.jpg')"; 
+    document.querySelector("html").style.backgroundImage = "url('../media/healthy_forest.jpg')"; 
     document.querySelector(".openbtn").innerHTML=" Statistics of Elysium Stage"
 
     //stats changed
@@ -182,7 +182,7 @@ function simulate(){ //adds all slider values together, takes average, then chec
     text4.innerHTML="7.9 extend msk";
   }
   else if(avg > 188 && avg <= 376){
-    document.querySelector("html").style.background = "url('../media/Tipping_Point_Edited.png')";
+    document.querySelector("html").style.backgroundImage = "url('../media/Tipping_Point_Edited.png')";
     document.querySelector(".openbtn").innerHTML=" Statistics of Tipping Point Stage"
     //stats changed
     text1.innerHTML="1.5°C";
@@ -191,7 +191,7 @@ function simulate(){ //adds all slider values together, takes average, then chec
     text4.innerHTML="4.9 extend msk";
   }
   else{
-    document.querySelector("html").style.background = "url('../media/unhealthy_forest-01.png')";
+    document.querySelector("html").style.backgroundImage = "url('../media/unhealthy_forest-01.png')";
     document.querySelector(".openbtn").innerHTML=" Statistics of Desert Stage";
 
     //stats changed

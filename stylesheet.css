@@ -1,6 +1,9 @@
 /* BACKGROUND */
 html{
-  background: url(media/Tipping_Point_Edited.png) no-repeat center center fixed;
+  background-image: url(media/Tipping_Point_Edited.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   font-family: 'Heebo';
   -webkit-background-size: cover;
   -moz-background-size: cover;
