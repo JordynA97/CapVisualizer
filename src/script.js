@@ -129,3 +129,6 @@ function transportChange(e) {
 //NEXT:
 //when you input algorithm, just change the html.style.background to the correct image given. 
 
+function simulate(){
+  
+}
