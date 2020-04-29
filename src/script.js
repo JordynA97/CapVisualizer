@@ -131,6 +131,51 @@ function transportChange(e) {
 //NEXT:
 //when you input algorithm, just change the html.style.background to the correct image given. 
 
+/* WEIGHTS */
+//Deforestation : 4;
+//publicTransport : 1;
+//Carbon Capture Tech : 5;
+//Population : 10;
+//Renewable Energy : 6;
+//Factories : 8;
+/* WEIGHTS */
+
+let corpSlider = document.querySelector("#corpsSlider");
+let deforestSlider = document.querySelector("#deforestSlider");
+let carbonCapSlider = document.querySelector("#carbonCapSlider");
+let renewSlider = document.querySelector("#renewSlider");
+let populationSlider = document.querySelector("#populationSlider");
+let transportSlider = document.querySelector("#transportSlider");
+let simButton = document.querySelector("#simulate");
+
 function simulate(){
-  
+  let deforestVal = deforestSlider.value * 4;
+  console.log(deforestVal);
+  let transportVal = transportSlider.value * 1;
+  console.log(transportVal);
+  let carbonVal = carbonCapSlider.value * 5;
+  console.log(carbonVal);
+  let populationVal = populationSlider.value * 10;
+  console.log(populationVal);
+  let renewVal = renewSlider.value * 6;
+  console.log(renewVal);
+  let corpVal = corpSlider.value * 8;
+  console.log(corpVal);
+  let total = deforestVal + transportVal + carbonVal + populationVal + renewVal + corpVal;
+  console.log(total);
+  let avg = Math.floor(total/6);
+  console.log(avg);
+  // 588 376 188
+
+  if(avg <= 188){
+    document.querySelector("html").style.background = "url('../media/healthy_forest.jpg')";
+  }
+  else if(avg > 188 && avg <= 376){
+    document.querySelector("html").style.background = "url('../media/Tipping_Point_Edited.png')";
+  }
+  else{
+    document.querySelector("html").style.background = "url('../media/unhealthy_forest-01.png')";
+  }
 }
+
+simButton.onclick = simulate;
