@@ -148,27 +148,27 @@ let populationSlider = document.querySelector("#populationSlider");
 let transportSlider = document.querySelector("#transportSlider");
 let simButton = document.querySelector("#simulate");
 
-function simulate(){
-  let deforestVal = deforestSlider.value * 4;
+function simulate(){ //adds all slider values together, takes average, then checks where the output is
+  let deforestVal = deforestSlider.value * 4; // deforestation
   console.log(deforestVal);
-  let transportVal = transportSlider.value * 1;
+  let transportVal = transportSlider.value * 1; //public transport
   console.log(transportVal);
-  let carbonVal = carbonCapSlider.value * 5;
+  let carbonVal = carbonCapSlider.value * 5; //carbon capture tech
   console.log(carbonVal);
-  let populationVal = populationSlider.value * 10;
+  let populationVal = populationSlider.value * 10; //population
   console.log(populationVal);
-  let renewVal = renewSlider.value * 6;
+  let renewVal = renewSlider.value * 6; //reneweable energy
   console.log(renewVal);
-  let corpVal = corpSlider.value * 8;
+  let corpVal = corpSlider.value * 8; //this is the factory value
   console.log(corpVal);
   let total = deforestVal + transportVal + carbonVal + populationVal + renewVal + corpVal;
   console.log(total);
-  let avg = Math.floor(total/6);
+  let avg = Math.floor(total/6); //rounds for easy number management 
   console.log(avg);
   // 588 376 188
 
   if(avg <= 188){
-    document.querySelector("html").style.background = "url('../media/healthy_forest.jpg')";
+    document.querySelector("html").style.background = "url('../media/healthy_forest.jpg')"; //gets the html object and resets bckgrnd
   }
   else if(avg > 188 && avg <= 376){
     document.querySelector("html").style.background = "url('../media/Tipping_Point_Edited.png')";
@@ -178,4 +178,4 @@ function simulate(){
   }
 }
 
-simButton.onclick = simulate;
+simButton.onclick = simulate; //gotta set that mean on click
