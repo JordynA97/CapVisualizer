@@ -7,7 +7,22 @@ var innerOverlayTwo = document.getElementById("innerOverlay2");
 var innerOverlayThree = document.getElementById("innerOverlay3");
 var innerOverlayFour = document.getElementById("innerOverlay4");
 
+//nav text
+var text1 = document.getElementById("panelText1");
+var text2 = document.getElementById("panelText2");
+var text3 = document.getElementById("panelText3");
+var text4 = document.getElementById("panelText4");
+
+//random block
 var styleBlock = document.getElementById("buttonbackground");
+
+//hover divs
+var corpInfo = document.querySelector("#corpsInfoText");
+var deforestInfo = document.querySelector("#deforestInfoText");
+var carbonInfo = document.querySelector("#carbonInfoText");
+var renewInfo = document.querySelector("#renewInfoText");
+var popInfo = document.querySelector("#popInfoText");
+var transInfo = document.querySelector("#transInfoText");
 
 //button function for left panel
 function openNav() {
@@ -102,9 +117,7 @@ function closeInnerNavFour(){
   innerOverlayFour.style.width = "20%";
 }
 
-
-
-
+//changes in slider style
 function corpsChange(e) {
   document.querySelector("#corpsSlider").style.background = 'linear-gradient(to right, #2EFFCD 0%, #2EFFCD ' + e + '%, #414C53 ' + e + '%, #414C53 100%)'
 };
@@ -128,8 +141,6 @@ function populationChange(e) {
 function transportChange(e) {
   document.querySelector("#transportSlider").style.background = 'linear-gradient(to right, #2EFFCD 0%, #2EFFCD ' + e + '%, #414C53 ' + e + '%, #414C53 100%)'
 };
-//NEXT:
-//when you input algorithm, just change the html.style.background to the correct image given. 
 
 /* WEIGHTS */
 //Deforestation : 4;
@@ -150,32 +161,97 @@ let simButton = document.querySelector("#simulate");
 
 function simulate(){ //adds all slider values together, takes average, then checks where the output is
   let deforestVal = deforestSlider.value * 4; // deforestation
-  console.log(deforestVal);
   let transportVal = transportSlider.value * 1; //public transport
-  console.log(transportVal);
   let carbonVal = carbonCapSlider.value * 5; //carbon capture tech
-  console.log(carbonVal);
   let populationVal = populationSlider.value * 10; //population
-  console.log(populationVal);
   let renewVal = renewSlider.value * 6; //reneweable energy
-  console.log(renewVal);
   let corpVal = corpSlider.value * 8; //this is the factory value
-  console.log(corpVal);
   let total = deforestVal + transportVal + carbonVal + populationVal + renewVal + corpVal;
-  console.log(total);
-  let avg = Math.floor(total/6); //rounds for easy number management 
-  console.log(avg);
-  // 588 376 188
 
+  let avg = Math.floor(total/6); //rounds for easy number management 
+
+  //what happens based on the average
   if(avg <= 188){
-    document.querySelector("html").style.background = "url('../media/healthy_forest.jpg')"; //gets the html object and resets bckgrnd
+    document.querySelector("html").style.background = "url('../media/healthy_forest.jpg')"; 
+    document.querySelector(".openbtn").innerHTML=" Statistics of Elysium Stage"
+
+    //stats changed
+    text1.innerHTML="0°C";
+    text2.innerHTML=".1-.3mm";
+    text3.innerHTML="200ppm";
+    text4.innerHTML="7.9 extend msk";
   }
   else if(avg > 188 && avg <= 376){
     document.querySelector("html").style.background = "url('../media/Tipping_Point_Edited.png')";
+    document.querySelector(".openbtn").innerHTML=" Statistics of Tipping Point Stage"
+    //stats changed
+    text1.innerHTML="1.5°C";
+    text2.innerHTML="3mm";
+    text3.innerHTML="2000ppm";
+    text4.innerHTML="4.9 extend msk";
   }
   else{
     document.querySelector("html").style.background = "url('../media/unhealthy_forest-01.png')";
+    document.querySelector(".openbtn").innerHTML=" Statistics of Desert Stage";
+
+    //stats changed
+    text1.innerHTML="2°C";
+    text2.innerHTML="5-18mm";
+    text3.innerHTML="5000ppm";
+    text4.innerHTML="0 extend msk";
   }
 }
 
 simButton.onclick = simulate; //gotta set that mean on click
+
+//functions for hover buttons
+//corps
+function openCorpInfo(){
+ corpInfo.style.visibility = "visible";
+}
+function closeCorpInfo(){
+ corpInfo.style.visibility = "hidden";
+}
+
+//deforest
+function openDeforestInfo(){
+  deforestInfo.style.visibility = "visible";
+}
+
+function closeDeforestInfo(){
+  deforestInfo.style.visibility = "hidden";
+}
+
+//carbon
+function openCarbonInfo(){
+  carbonInfo.style.visibility = "visible";
+}
+
+function closeCarbonInfo(){
+  carbonInfo.style.visibility = "hidden";
+}
+
+//renew
+function openRenewInfo(){
+  renewInfo.style.visibility = "visible";
+}
+
+function closeRenewInfo(){
+  renewInfo.style.visibility = "hidden";
+}
+
+//population
+function openPopInfo(){
+  popInfo.style.visibility = "visible";
+}
+function closePopInfo(){
+  popInfo.style.visibility = "hidden";
+}
+
+//transportation
+function openTransInfo(){
+  transInfo.style.visibility = "visible";
+}
+function closeTransInfo(){
+  transInfo.style.visibility = "hidden";
+}
