@@ -10,7 +10,6 @@
   <body>
     <!-- LEFT PANEL -->
     <div id="mySidepanel" class="sidepanel">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       
       <div id="innerPanelOne" class="innerPanels">
         <button id="statOne" class="statButtons" onclick="openInnerOne()">Global Average Temp Rise</button>
@@ -36,13 +35,14 @@
         <p id="panelText">4.9<span id="measure"> extend msk</span></p>
       </div>
     </div>
-    
+    <div id="buttonbackground">
     <button class="openbtn" onclick="openNav()">Statistics</button>  
+  </div>
 
     <!-- RIGHT PANEL -->
     <div id="mySidepanelRight" class="sidepanelRight">
-      <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
-        <div id="createSimulation">
+      <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a> 
+      <div id="createSimulation">
           <p id="title">Imagine the Amazon Rainforest</p>
           <p id="subtitle"> The visualizer will show an outcome of the Amazon based on your choices</p>
 
@@ -80,7 +80,7 @@
         </div>
     </div>
     
-    <button class="openbtnRight" onclick="openNavRight()">Settings</button>  
+    <button class="openbtnRight" onclick="openNavRight()"><p id="settingsText">Settings</p></button>  
 
     <script src="../src/script.js"></script>
   </body>
