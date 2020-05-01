@@ -170,6 +170,10 @@ function simulate(){ //adds all slider values together, takes average, then chec
 
   let avg = Math.floor(total/6); //rounds for easy number management 
 
+  document.querySelector(".sidepanel").style.visibility = "visible";
+  document.querySelector(".openbtn").style.visibility = "visible";
+  document.querySelector("#buttonbackground").style.visibility = "visible";
+
   //what happens based on the average
   if(avg <= 188){
     document.querySelector("html").style.backgroundImage = "url('../media/healthy_forest.jpg')"; 
